@@ -7,7 +7,7 @@ instance BAN_9001_Roland (Npc_Default)
 name = "Roland";
 Npctype = Npctype_Main;
 guild = GIL_NONE;
-level = 20;
+level = 21;
 voice = 10;
 id = 9001;
 
