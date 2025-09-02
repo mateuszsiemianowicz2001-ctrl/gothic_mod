@@ -374,3 +374,4 @@ var int Scorpio_Exile;
 //------------------------------------------------------------------------
 
 var int LeftyDead;
+var int MIS_znajomi;

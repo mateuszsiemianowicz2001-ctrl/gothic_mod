@@ -5,10 +5,10 @@ instance BAN_9001_Roland (Npc_Default)
 //----------Info ogolne----------
 
 name = "Roland";
-Npctype = Npctype_Main;
+Npctype = NPCTYPE_GUARD;
 guild = GIL_NONE;
 level = 21;
-voice = 10;
+voice = 12;
 id = 9001;
 
 //----------Statystyki----------
@@ -24,13 +24,13 @@ attribute[ATR_HITPOINTS] = 220;
 
 Mdl_SetVisual		(self,"HUMANS.MDS");
 Mdl_ApplyOverlayMds	(self,"Humans_Militia.mds");
-Mdl_SetVisualBody (self,"hum_body_naked0",0, 0,"Hum_Head_Bald",103, 1,VLK_ARMOR_M);
+Mdl_SetVisualBody (self,"hum_body_naked0",0, 0,"Hum_Head_FatBald",91, 1,VLK_ARMOR_M);
 B_Scale (self);
 Mdl_SetModelFatness(self,0);
 
 //----------Umiejetnasci----------
 
-Npc_SetTalentSkill (self, NPC_TALENT_1H,2);
+Npc_SetTalentSkill (self, NPC_TALENT_1H,1);
 
 //----------Ekwipunek----------
 EquipItem		(self, ItMw_1H_Sword_Old_01);
@@ -47,7 +47,7 @@ daily_routine = Rtn_start_9001;
 };
 FUNC VOID Rtn_start_9001 ()
 {
-TA_Boss (09,00,18,00,"WP_MOD_000");
+TA_Boss (08,00,18,00,"WP_MOD_000");
 TA_SitAround (18,00,24,00,"WP_MOD_003");
-TA_Sleep (24,00,09,00,"WP_MOD_006");
+TA_Sleep (24,00,08,00,"WP_MOD_006");
 };

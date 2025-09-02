@@ -112,3 +112,4 @@ const string	CH5_Uriziel				=	"Magiczny miecz URIZIEL";
 //	KAPITEL 6
 //---------------------------------------------------------------------
 const string	CH6_Sleeper				=	"Przebudzenie Œni¹cego";
+const string CH1_znajomi      = "Starzy Znajomi";
